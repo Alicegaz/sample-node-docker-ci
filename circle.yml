@@ -4,9 +4,9 @@ machine:
 
 dependencies:
   override:
-    - docker build -t kostyaurysov/sample-node .
+    - docker build -t alicegaz/sample-node .
 
 test:
   override:
-    - docker run kostyaurysov/sample-node npm test
+    - docker run alicegaz/sample-node npm test
 
