@@ -8,5 +8,5 @@ docker stop web || true
 docker rm web || true
 docker rmi alicegaz/sample-node:current || true
 docker tag alicegaz/sample-node:latest alicegaz/sample-node:current
-docker run -d --net app --restart always --name web -p 80:80 alicegaz/sample-node:current
+docker run -d --net mynetwork --restart always --name web -p 80:80 alicegaz/sample-node:current
 EOF
