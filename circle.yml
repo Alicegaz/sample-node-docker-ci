@@ -11,9 +11,9 @@ test:
     - docker run alicegaz/sample-node npm test
 
 deployment: 
-    production: 
-        branch: master
-        commands: 
-            - docker login -u $DOCKER_USER -p $DOCKER_PASS
-            - chmod +x deploy.sh
-            - sh ./deploy.sh
+  production: 
+    branch: master
+    commands: 
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - chmod +x deploy.sh
+      - sh ./deploy.sh
