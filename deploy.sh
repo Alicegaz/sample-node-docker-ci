@@ -2,7 +2,7 @@
 docker build -t alicegaz/sample-node .
 docker push alicegaz/sample-node
 
-ssh -i ~/.ssh/my-ssh gazizullina143@104.198.135.103 << EOF
+ssh -i ~/.ssh/key gazizullina143@104.198.135.103 << EOF
 docker pull alicegaz/sample-node:latest
 docker stop web || true
 docker rm web || true
