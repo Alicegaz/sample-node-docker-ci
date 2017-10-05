@@ -1,5 +1,4 @@
 #!/bin/bash
-docker build -t alicegaz/sample-node .
 docker push alicegaz/sample-node
 
 ssh -i ~/.ssh/key gazizullina143@104.198.135.103 << EOF
