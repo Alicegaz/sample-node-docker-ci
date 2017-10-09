@@ -1,7 +1,7 @@
 #!/bin/bash
 docker push alicegaz/sample-node
 
-ssh -i ~/.ssh/my-shh gazizullina143@104.198.135.103 << EOF
+ssh gazizullina143@104.198.135.103 << EOF
 docker pull alicegaz/sample-node:latest
 docker stop web || true
 docker rm web || true
